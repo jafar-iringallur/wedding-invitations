@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nihala &amp; Sahad · 16 January 2027</title>
+<meta name="description" content="The wedding of Fathima Nihala &amp; Sahad Mahaboob · Saturday, 16 January 2027 · Lazza Convention Centre, Moonniyur">
+<meta property="og:title" content="Nihala &amp; Sahad · Wedding Invitation">
+<meta property="og:description" content="Saturday, 16 January 2027 · Nikah 9:00 am · Reception 11:00 am – 3:00 pm, Lazza Convention Centre, Moonniyur">
+<meta name="theme-color" content="#2a0c13">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --velvet:#2a0c13;
+  --velvet-2:#36111a;
+  --wine:#6e1d2b;
+  --ivory:#f4ecdb;
+  --ivory-2:#ebe0c9;
+  --ink:#3a1219;
+  --ink-soft:#6b4a4a;
+  --gold:#c4a061;
+  --gold-hi:#e2c58c;
+  --gold-lo:#94743a;
+  --on-dark:#efe3cc;
+  --on-dark-soft:#bca88e;
+  --display:'Bodoni Moda',Didot,'Times New Roman',serif;
+  --text:'EB Garamond',Garamond,Georgia,serif;
+  --script:'Pinyon Script',cursive;
+  --grain-soft:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--velvet);color:var(--on-dark);
+  font-family:var(--text);font-size:18px;line-height:1.55;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+body::before{ /* film grain over everything */
+  content:"";position:fixed;inset:0;z-index:90;pointer-events:none;
+  background-image:var(--grain);opacity:.09;mix-blend-mode:overlay;
+}
+body.locked{overflow:hidden;height:100svh}
+a{color:inherit}
+.sc{font-variant:all-small-caps;letter-spacing:.14em;font-feature-settings:"c2sc","smcp"}
+.gold{color:var(--gold)}
+.foil{
+  background:linear-gradient(170deg,var(--gold-hi) 0%,var(--gold) 45%,var(--gold-lo) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.65,.25,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}.rv.d4{transition-delay:.48s}
+/* line drawing */
+.draw path,.draw line,.draw circle,.draw ellipse{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s cubic-bezier(.6,.1,.2,1)}
+.draw.in path,.draw.in line,.draw.in circle,.draw.in ellipse{stroke-dashoffset:0}
+
+/* ================= ENVELOPE GATE ================= */
+#gate{
+  position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;
+  background:radial-gradient(ellipse at 50% 40%,#3d121c 0%,var(--velvet) 65%,#1a070c 100%);
+  transition:opacity .9s ease,visibility 0s .9s;
+}
+#gate.gone{opacity:0;visibility:hidden}
+.env{
+  --w:min(420px,86vw);
+  position:relative;width:var(--w);height:calc(var(--w) * .68);
+  perspective:1400px;transition:transform 1s cubic-bezier(.5,0,.2,1);
+}
+#gate.opened .env{transform:translateY(16%)}
+.env-back{position:absolute;inset:0;background:#5a1622;border-radius:4px;box-shadow:0 40px 80px rgba(0,0,0,.55),0 10px 20px rgba(0,0,0,.3)}
+.env-card{
+  position:absolute;left:6%;right:6%;top:6%;height:88%;z-index:2;
+  background:linear-gradient(180deg,#f8f2e4,var(--ivory));
+  border-radius:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--ink);
+  transition:transform 1.1s cubic-bezier(.4,0,.2,1) .55s;
+}
+.env-card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(148,116,58,.6)}
+.env-card .n{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,5vw,1.7rem);line-height:1.1}
+.env-card .a{font-family:var(--script);font-size:1.7rem;color:var(--gold-lo);line-height:1}
+.env-card small{margin-top:8px;color:var(--ink-soft);font-size:.8rem}
+#gate.opened .env-card{transform:translateY(-58%)}
+.env-front{
+  position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:linear-gradient(90deg,#64192a,#6e1d2b 50%,#64192a);
+  clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);
+}
+.env-front::after{ /* bottom pocket */
+  content:"";position:absolute;left:0;right:0;bottom:0;height:62%;
+  background:#74202e;clip-path:polygon(0 100%,50% 18%,100% 100%);
+}
+.env-front::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.35;mix-blend-mode:multiply}
+.env-flap{
+  position:absolute;left:0;right:0;top:0;height:62%;z-index:4;
+  transform-origin:top center;transition:transform .8s cubic-bezier(.5,0,.3,1) .2s,z-index 0s .6s;
+}
+.env-flap::before{
+  content:"";position:absolute;inset:0;background:#7d2433;
+  clip-path:polygon(0 0,100% 0,50% 100%);
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,.35));
+}
+#gate.opened .env-flap{transform:rotateX(180deg);z-index:1}
+.seal{
+  position:absolute;left:50%;top:62%;z-index:5;width:clamp(78px,20vw,96px);aspect-ratio:1;
+  transform:translate(-50%,-50%);border:none;background:none;cursor:pointer;padding:0;
+  transition:transform .45s cubic-bezier(.5,-0.4,.6,1.4),opacity .35s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.seal svg{width:100%;height:100%;display:block;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45))}
+.seal:hover{transform:translate(-50%,-50%) rotate(-6deg) scale(1.04)}
+.seal:focus-visible{outline:1px dashed var(--gold);outline-offset:6px;border-radius:50%}
+#gate.opened .seal{transform:translate(-50%,-50%) scale(.2) rotate(40deg);opacity:0}
+.gate-hint{font-style:italic;color:var(--on-dark-soft);font-size:1.05rem;text-align:center;transition:opacity .4s}
+.gate-hint b{display:block;font-style:normal;font-weight:400;color:var(--gold)}
+#gate.opened .gate-hint{opacity:0}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;
+  padding:90px 20px 110px;overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 48%,rgba(110,29,43,.55),transparent 75%),
+    var(--velvet);
+}
+.mihrab{position:absolute;left:50%;top:50%;width:min(540px,90vw);height:min(820px,88svh);transform:translate(-50%,-50%);color:var(--gold);opacity:.55;pointer-events:none}
+.hero-in{position:relative;max-width:860px}
+.hero .bism{font-family:'Amiri',serif;font-size:clamp(1.3rem,4.4vw,1.65rem);direction:rtl;line-height:1.8}
+.hero .pre{margin-top:clamp(20px,5svh,44px);font-style:italic;color:var(--on-dark-soft);font-size:1.1rem}
+.names{margin-top:6px}
+.names .nm{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.7rem,10.5vw,5.4rem);line-height:1.02;letter-spacing:-.01em;white-space:nowrap}
+.names .nm em{font-style:italic}
+.names .amp{display:block;font-family:var(--script);font-size:clamp(3rem,10vw,4.6rem);line-height:.9;margin:4px 0 -6px;color:var(--gold)}
+.dateline{
+  margin:clamp(30px,6svh,52px) auto 0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  max-width:380px;color:var(--on-dark);
+}
+.dateline span{font-size:1.15rem}
+.dateline .side{border-top:1px solid rgba(196,160,97,.55);border-bottom:1px solid rgba(196,160,97,.55);padding:6px 0}
+.dateline .day{font-family:var(--display);font-size:clamp(3rem,11vw,4.2rem);line-height:1;padding:0 18px;color:var(--gold-hi)}
+.dateline-yr{margin-top:6px;letter-spacing:.5em;padding-left:.5em;color:var(--on-dark-soft);font-size:.95rem}
+.hero-in > *{opacity:0;transform:translateY(14px)}
+body.ready .hero-in > *{animation:up 1.2s cubic-bezier(.2,.65,.25,1) forwards}
+body.ready .hero-in > :nth-child(2){animation-delay:.2s}
+body.ready .hero-in > :nth-child(3){animation-delay:.4s}
+body.ready .hero-in > :nth-child(4){animation-delay:.65s}
+body.ready .hero-in > :nth-child(5){animation-delay:.8s}
+@keyframes up{to{opacity:1;transform:none}}
+.down{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--on-dark-soft);text-decoration:none;font-style:italic;font-size:.95rem;display:flex;flex-direction:column;align-items:center;gap:8px}
+.down i{display:block;width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+
+/* ================= PAPER CARD ================= */
+.paper-wrap{padding:0 14px;position:relative;z-index:2}
+.paper{
+  position:relative;max-width:660px;margin:0 auto;
+  background-color:var(--ivory);background-image:var(--grain-soft),radial-gradient(ellipse at 50% 0%,#fbf6ea,transparent 70%),linear-gradient(180deg,#f6efe0,var(--ivory-2));
+  color:var(--ink);text-align:center;
+  padding:clamp(56px,10vw,84px) clamp(26px,7vw,70px);
+  box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 30px 70px rgba(0,0,0,.45),0 6px 14px rgba(0,0,0,.25);
+}
+.paper::before{content:"";position:absolute;inset:12px;border:1px solid rgba(148,116,58,.55);pointer-events:none}
+.paper::after{content:"";position:absolute;inset:17px;border:.5px solid rgba(148,116,58,.35);pointer-events:none}
+.paper .corner{position:absolute;width:44px;height:44px;color:var(--gold-lo)}
+.paper .corner.tl{top:6px;left:6px}.paper .corner.tr{top:6px;right:6px;transform:scaleX(-1)}
+.paper .corner.bl{bottom:6px;left:6px;transform:scaleY(-1)}.paper .corner.br{bottom:6px;right:6px;transform:scale(-1)}
+.paper .intro{font-style:italic;font-size:clamp(1.12rem,3.2vw,1.3rem);color:var(--ink-soft);line-height:1.6}
+.party{margin-top:30px}
+.party h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,7vw,2.9rem);line-height:1.08;color:var(--wine)}
+.party .of{margin-top:8px;font-size:1.15rem}
+.party .of b{font-weight:500}
+.party .home{margin-top:4px;color:var(--ink-soft);font-size:1rem;line-height:1.45}
+.with{display:flex;align-items:center;gap:16px;justify-content:center;margin:26px 0 22px;color:var(--gold-lo)}
+.with::before,.with::after{content:"";height:1px;width:56px;background:currentColor;opacity:.6}
+.with span{font-family:var(--script);font-size:2.4rem;line-height:1}
+.paper .note{margin-top:34px;font-size:1.08rem;color:var(--ink-soft)}
+
+/* ================= SECTION BASICS ================= */
+section{position:relative;padding:clamp(90px,14vw,140px) 20px}
+.head{text-align:center;margin-bottom:clamp(38px,6vw,56px)}
+.head .k{color:var(--gold);font-size:1rem}
+.head h3{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(2.2rem,7vw,3.3rem);line-height:1.1;margin-top:4px}
+.orn{display:block;width:150px;height:18px;margin:16px auto 0;color:var(--gold)}
+
+/* ================= PROGRAMME ================= */
+.prog{max-width:680px;margin:0 auto;position:relative}
+.item{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:clamp(20px,5vw,44px);padding:30px 0;border-top:1px solid rgba(196,160,97,.28)}
+.item:last-child{border-bottom:1px solid rgba(196,160,97,.28)}
+.item .t{text-align:right}
+.item .t b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,8vw,3.6rem);line-height:1;color:var(--gold-hi)}
+.item .t span{display:block;margin-top:6px;color:var(--on-dark-soft);font-size:1rem}
+.item h4{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,5vw,2.1rem);line-height:1.1}
+.item p{color:var(--on-dark-soft);margin-top:6px;font-size:1.08rem}
+.item .place{color:var(--on-dark);font-style:italic}
+.links{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 22px}
+.lnk{
+  background:none;border:none;cursor:pointer;font:inherit;color:var(--gold);font-size:1.02rem;padding:2px 0;
+  text-decoration:none;border-bottom:1px solid rgba(196,160,97,.45);transition:color .25s,border-color .25s;
+}
+.lnk:hover{color:var(--gold-hi);border-color:var(--gold-hi)}
+.lnk::after{content:" →";transition:margin .25s}
+.lnk:hover::after{margin-left:3px}
+
+/* ================= VENUE ================= */
+.venue .paper{padding-bottom:clamp(40px,7vw,60px)}
+.venue .paper .k{color:var(--gold-lo);font-size:1rem}
+.venue h3{font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,7vw,3rem);line-height:1.05;color:var(--wine);margin-top:8px}
+.venue .addr{margin-top:8px;color:var(--ink-soft);font-size:1.1rem}
+.map{
+  position:relative;margin:30px auto 0;aspect-ratio:4/3;max-height:380px;width:100%;
+  border:1px solid rgba(148,116,58,.5);padding:6px;background:rgba(255,255,255,.35);
+}
+.map iframe{width:100%;height:100%;border:0;display:block;filter:sepia(.18) saturate(.9) contrast(.98)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:26px;
+  padding:14px 28px;border-radius:2px;cursor:pointer;text-decoration:none;
+  font-family:var(--text);font-size:1.05rem;letter-spacing:.12em;font-variant:all-small-caps;
+  background:var(--wine);color:var(--ivory);border:1px solid var(--wine);
+  transition:background .25s,color .25s;
+}
+.btn:hover{background:transparent;color:var(--wine)}
+.btn svg{width:16px;height:16px}
+.btn.alt{background:transparent;color:var(--wine)}
+.btn.alt:hover{background:var(--wine);color:var(--ivory)}
+.btns{display:flex;flex-wrap:wrap;gap:0 12px;justify-content:center}
+
+/* ================= COUNTDOWN ================= */
+.count{text-align:center}
+.count .lead{font-style:italic;color:var(--on-dark-soft);font-size:1.15rem}
+.clock{display:flex;justify-content:center;margin-top:22px}
+.clock div{padding:0 clamp(14px,4.5vw,40px);border-left:1px solid rgba(196,160,97,.35)}
+.clock div:first-child{border-left:none}
+.clock b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,9vw,4.4rem);line-height:1;font-variant-numeric:lining-nums tabular-nums;color:var(--on-dark)}
+.clock small{display:block;margin-top:8px;color:var(--gold);font-size:.95rem}
+
+/* ================= CLOSING ================= */
+.closing{text-align:center;padding-bottom:70px}
+.dua{font-family:'Amiri',serif;direction:rtl;font-size:clamp(1.45rem,5vw,2rem);line-height:1.9;max-width:640px;margin:0 auto}
+.dua-en{max-width:520px;margin:14px auto 0;font-style:italic;color:var(--on-dark-soft);font-size:1.12rem}
+.sign{margin-top:54px}
+.sign .w{font-family:var(--script);font-size:clamp(2.6rem,8vw,3.4rem);color:var(--gold);line-height:1}
+.sign p{margin-top:14px;font-size:1.2rem;line-height:1.5}
+.share{
+  margin-top:40px;background:none;border:1px solid rgba(196,160,97,.55);color:var(--gold-hi);cursor:pointer;
+  padding:13px 26px;font-family:var(--text);font-size:1.05rem;letter-spacing:.12em;font-variant:all-small-caps;
+  display:inline-flex;gap:10px;align-items:center;transition:background .25s,color .25s;
+}
+.share:hover{background:var(--gold);color:var(--velvet)}
+.share svg{width:16px;height:16px}
+footer{text-align:center;padding:26px 20px 40px;color:rgba(188,168,142,.55);font-size:.95rem;letter-spacing:.3em}
+
+/* ================= PETALS + TOGGLE ================= */
+#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.toggle{
+  position:fixed;right:14px;bottom:14px;z-index:60;width:42px;height:42px;border-radius:50%;
+  display:grid;place-items:center;cursor:pointer;color:var(--gold);
+  background:rgba(42,12,19,.75);border:1px solid rgba(196,160,97,.45);backdrop-filter:blur(4px);
+  opacity:0;pointer-events:none;transition:opacity .5s ease;
+}
+body.ready .toggle{opacity:1;pointer-events:auto}
+.toggle svg{width:18px;height:18px}
+.toggle[aria-pressed="false"]{opacity:.55}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);z-index:70;background:var(--ivory);color:var(--ink);padding:10px 18px;font-size:1rem;opacity:0;transition:.35s;pointer-events:none;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:560px){
+  body{font-size:17px}
+  .item{grid-template-columns:1fr;gap:10px;text-align:center;padding:30px 0}
+  .item .t{text-align:center}
+  .item .t span{margin-top:4px}
+  .links{justify-content:center}
+  .paper .corner{width:34px;height:34px}
+  .paper::before{inset:9px}.paper::after{inset:13px}
+  .dateline .day{padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  #petals{display:none}
+}
+</style>
+</head>
+<body class="locked">
+
+<!-- shared ornament symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="orn" viewBox="0 0 150 18"><g fill="none" stroke="currentColor" stroke-width=".9"><path d="M2 9h50"/><path d="M98 9h50"/><path d="M58 9c5-7 12-7 17 0 5 7 12 7 17 0"/><path d="M58 9c5 7 12 7 17 0 5-7 12-7 17 0"/><circle cx="75" cy="9" r="1.6" fill="currentColor"/><circle cx="55" cy="9" r="1" fill="currentColor"/><circle cx="95" cy="9" r="1" fill="currentColor"/></g></symbol>
+  <symbol id="corner" viewBox="0 0 44 44"><g fill="none" stroke="currentColor" stroke-width=".9"><path d="M6 38V6h32"/><path d="M6 6c10 2 16 8 18 18"/><path d="M14 6c0 6 3 9 9 9"/><path d="M6 14c6 0 9 3 9 9"/><circle cx="6" cy="6" r="1.8" fill="currentColor"/></g></symbol>
+</svg>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<!-- ================= ENVELOPE ================= -->
+<div id="gate">
+  <div class="env">
+    <div class="env-back"></div>
+    <div class="env-card">
+      <span class="n">Nihala</span><span class="a">&amp;</span><span class="n">Sahad</span>
+      <small class="sc">16 January 2027</small>
+    </div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <button class="seal" id="seal" type="button" aria-label="Open the invitation">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <radialGradient id="wax" cx="38%" cy="32%" r="70%"><stop offset="0" stop-color="#b8393f"/><stop offset=".55" stop-color="#8c1f2a"/><stop offset="1" stop-color="#5c1019"/></radialGradient>
+        </defs>
+        <path fill="url(#wax)" d="M50 3c7 0 9 4 15 5s11 1 14 6 1 10 5 15 9 7 9 14-5 9-6 15 2 11-2 16-10 4-15 8-6 10-13 11-10-3-16-4-12 3-17-1-3-11-8-15-10-6-11-13 4-10 4-16-4-11 0-16 10-3 15-7 4-11 11-13 8 1 15-5z"/>
+        <circle cx="50" cy="50" r="31" fill="none" stroke="#5c1019" stroke-width="1.4" opacity=".7"/>
+        <circle cx="50" cy="50" r="27" fill="none" stroke="#c75a5f" stroke-width=".6" opacity=".5"/>
+        <text x="50" y="58" text-anchor="middle" font-family="Bodoni Moda, serif" font-style="italic" font-size="25" fill="#e9b4a0" opacity=".9">N<tspan font-size="15" dy="-2">&amp;</tspan><tspan dy="2">S</tspan></text>
+      </svg>
+    </button>
+  </div>
+  <p class="gate-hint"><b class="sc">A letter for you</b>Tap the seal to open</p>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <svg class="mihrab draw" id="mihrab" viewBox="0 0 540 820" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+    <path pathLength="1" d="M20 820V300C20 170 130 90 270 20 410 90 520 170 520 300V820"/>
+    <path pathLength="1" d="M36 820V304C36 182 140 108 270 40 400 108 504 182 504 304V820" opacity=".5"/>
+    <path pathLength="1" d="M262 20l8-12 8 12-8 8z" stroke-width="1.2"/>
+  </svg>
+  <div class="hero-in">
+    <p class="bism foil" lang="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+    <p class="pre">The wedding of</p>
+    <h1 class="names">
+      <span class="nm">Fathima <em>Nihala</em></span>
+      <span class="amp">&amp;</span>
+      <span class="nm">Sahad <em>Mahaboob</em></span>
+    </h1>
+    <div class="dateline">
+      <span class="side sc">Saturday</span>
+      <span class="day">16</span>
+      <span class="side sc">January</span>
+    </div>
+    <p class="dateline-yr">2027</p>
+  </div>
+  <a class="down" href="#card">scroll<i></i></a>
+</header>
+
+<!-- ================= INVITATION CARD ================= -->
+<div class="paper-wrap" id="card">
+  <article class="paper rv">
+    <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+    <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+
+    <p class="intro rv">By the grace of Allah, the Most Merciful,<br>we warmly invite you and your family<br>to the marriage of</p>
+
+    <div class="party rv d1">
+      <h2>Fathima Nihala</h2>
+      <p class="of">daughter of <b>Moosa BP</b></p>
+      <p class="home">Bembala Poothattayi · Pazheril House<br>Ullanam, Parappanangadi</p>
+    </div>
+
+    <div class="with rv d2" aria-hidden="true"><span>with</span></div>
+
+    <div class="party rv d2" style="margin-top:0">
+      <h2>Sahad Mahaboob</h2>
+      <p class="of">son of <b>Moideen Kutty</b></p>
+      <p class="home">Puthupurakkat House<br>Chemmad</p>
+    </div>
+
+    <p class="note rv d3">Your presence and prayers will bless the occasion.</p>
+  </article>
+</div>
+
+<!-- ================= PROGRAMME ================= -->
+<section id="day">
+  <div class="head">
+    <p class="k sc rv">Saturday, 16 January 2027</p>
+    <h3 class="rv d1">Order of the Day</h3>
+    <svg class="orn rv d2"><use href="#orn"/></svg>
+  </div>
+  <div class="prog">
+    <div class="item rv">
+      <div class="t"><b>9:00</b><span>in the morning</span></div>
+      <div>
+        <h4>Nikah</h4>
+        <p>The marriage contract, sealed in the company of family and elders.</p>
+        <div class="links"><button class="lnk" type="button" data-cal="nikah">Add to calendar</button></div>
+      </div>
+    </div>
+    <div class="item rv d1">
+      <div class="t"><b>11:00</b><span>until 3:00 in the afternoon</span></div>
+      <div>
+        <h4>Reception</h4>
+        <p class="place">Lazza Convention Centre, Moonniyur</p>
+        <p>Join us to share the joy with the newly married couple.</p>
+        <div class="links">
+          <a class="lnk" href="https://maps.app.goo.gl/KHmURn2zLyJeMxfs5?g_st=aw" target="_blank" rel="noopener">Directions</a>
+          <button class="lnk" type="button" data-cal="reception">Add to calendar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VENUE ================= -->
+<div class="paper-wrap venue" id="venue">
+  <article class="paper rv">
+    <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+    <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+    <p class="k sc">The Reception Venue</p>
+    <h3>Lazza Convention Centre</h3>
+    <p class="addr">Moonniyur, Malappuram, Kerala 676311</p>
+    <div class="map">
+      <iframe title="Map showing Lazza Convention Centre, Moonniyur" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=3V5M%2B575+Lazza+convention+centre,+Moonniyur,+Kerala+676311&z=15&output=embed"></iframe>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://maps.app.goo.gl/KHmURn2zLyJeMxfs5?g_st=aw" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+        Open in Google Maps
+      </a>
+    </div>
+  </article>
+</div>
+
+<!-- ================= COUNTDOWN ================= -->
+<section class="count" id="count">
+  <p class="lead rv">and so the days are counted, until the Nikah</p>
+  <div class="clock rv d1" id="clock">
+    <div><b data-u="d">00</b><small class="sc">days</small></div>
+    <div><b data-u="h">00</b><small class="sc">hours</small></div>
+    <div><b data-u="m">00</b><small class="sc">minutes</small></div>
+    <div><b data-u="s">00</b><small class="sc">seconds</small></div>
+  </div>
+</section>
+
+<!-- ================= CLOSING ================= -->
+<section class="closing" style="padding-top:20px">
+  <svg class="orn rv" style="margin-bottom:34px"><use href="#orn"/></svg>
+  <p class="dua foil rv" lang="ar">بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+  <p class="dua-en rv d1">“May Allah bless you both, shower His blessings upon you, and unite you in goodness.”</p>
+  <div class="sign rv d2">
+    <span class="w">With duas,</span>
+    <p>Moosa BP &amp; family<br><span class="gold" style="font-style:italic">and</span><br>Moideen Kutty &amp; family</p>
+  </div>
+  <button class="share rv d3" id="share" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+    Share this invitation
+  </button>
+</section>
+<footer>16 · 01 · 2027</footer>
+
+<button class="toggle" id="petalBtn" type="button" aria-pressed="true" aria-label="Falling petals" title="Petals on / off">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c-3 3-3 6 0 9 3-3 3-6 0-9zM12 12c-4-1-7 0-9 3 3 1 6 0 9-3zM12 12c4-1 7 0 9 3-3 1-6 0-9-3zM12 12v9"/></svg>
+</button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  const body=document.body, gate=document.getElementById('gate');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- envelope ---------- */
+  function openGate(){
+    if(gate.classList.contains('opened'))return;
+    gate.classList.add('opened');
+    setTimeout(()=>{gate.classList.add('gone');body.classList.remove('locked');body.classList.add('ready');document.getElementById('mihrab').classList.add('in');startPetals()},reduce?50:2100);
+    setTimeout(()=>gate.remove(),reduce?200:3200);
+  }
+  document.getElementById('seal').addEventListener('click',openGate);
+
+  /* ---------- reveal ---------- */
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+  /* ---------- countdown to Nikah, 9:00 IST ---------- */
+  const target=new Date('2027-01-16T09:00:00+05:30').getTime();
+  const u={};['d','h','m','s'].forEach(k=>u[k]=document.querySelector('[data-u="'+k+'"]'));
+  function tick(){
+    const t=Math.max(0,target-Date.now());
+    const v={d:Math.floor(t/864e5),h:Math.floor(t/36e5)%24,m:Math.floor(t/6e4)%60,s:Math.floor(t/1e3)%60};
+    for(const k in v)u[k].textContent=String(v[k]).padStart(2,'0');
+    if(!t)document.querySelector('#count .lead').textContent='Alhamdulillah — the day has arrived';
+  }
+  tick();setInterval(tick,1000);
+
+  /* ---------- toast ---------- */
+  const toast=document.getElementById('toast');let tt;
+  function say(m){toast.textContent=m;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('on'),2200)}
+
+  /* ---------- add to calendar ---------- */
+  const ev={
+    nikah:{t:'Nikah · Nihala & Sahad',s:'20270116T033000Z',e:'20270116T050000Z',l:''},
+    reception:{t:'Wedding Reception · Nihala & Sahad',s:'20270116T053000Z',e:'20270116T093000Z',l:'Lazza Convention Centre\\, Moonniyur'}
+  };
+  document.querySelectorAll('[data-cal]').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.cal,e=ev[k];
+    const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//nihala-sahad//EN','BEGIN:VEVENT','UID:'+k+'-nihala-sahad-2027','DTSTAMP:20261122T000000Z',
+      'DTSTART:'+e.s,'DTEND:'+e.e,'SUMMARY:'+e.t,e.l&&'LOCATION:'+e.l,'URL:https://maps.app.goo.gl/KHmURn2zLyJeMxfs5',
+      'DESCRIPTION:The wedding of Fathima Nihala & Sahad Mahaboob','END:VEVENT','END:VCALENDAR'].filter(Boolean).join('\r\n');
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download=k+'-nihala-sahad.ics';
+    document.body.appendChild(a);a.click();a.remove();say('Calendar file downloaded');
+  }));
+
+  /* ---------- share ---------- */
+  document.getElementById('share').addEventListener('click',async()=>{
+    const data={title:'Nihala & Sahad · Wedding Invitation',text:'You are invited to the wedding of Fathima Nihala & Sahad Mahaboob — Saturday, 16 January 2027.',url:location.href};
+    try{
+      if(navigator.share){await navigator.share(data)}
+      else{await navigator.clipboard.writeText(data.text+' '+data.url);say('Link copied')}
+    }catch(e){}
+  });
+
+  /* ---------- petals ---------- */
+  const cv=document.getElementById('petals'),cx=cv.getContext('2d');
+  let W,H,P=[],on=true,running=false;
+  const hues=['#9e2a3a','#b8394b','#d98f8a','#c4a061','#7a1a28'];
+  function size(){const d=Math.min(2,devicePixelRatio||1);W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
+  size();addEventListener('resize',size);
+  const max=()=>Math.round(Math.min(22,Math.max(10,W/55)));
+  const mk=y=>({x:Math.random()*W,y:y??-20,r:4+Math.random()*6,vy:.35+Math.random()*.7,vx:-.2+Math.random()*.4,a:Math.random()*6.3,va:-.02+Math.random()*.04,sw:Math.random()*6.3,c:hues[Math.random()*hues.length|0],o:.45+Math.random()*.4,f:Math.random()*6.3});
+  function startPetals(){
+    if(reduce||running)return;running=true;
+    for(let i=0;i<max();i++)P.push(mk(Math.random()*-H));
+    (function loop(){
+      cx.clearRect(0,0,W,H);
+      if(on)for(const p of P){
+        p.sw+=.015;p.f+=.03;p.x+=p.vx+Math.sin(p.sw)*.4;p.y+=p.vy;p.a+=p.va;
+        if(p.y>H+20)Object.assign(p,mk());
+        cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.scale(1,Math.abs(Math.cos(p.f))*.7+.3);
+        cx.globalAlpha=p.o;cx.fillStyle=p.c;cx.beginPath();
+        cx.moveTo(0,-p.r);cx.bezierCurveTo(p.r,-p.r*.5,p.r*.6,p.r*.7,0,p.r);cx.bezierCurveTo(-p.r*.6,p.r*.7,-p.r,-p.r*.5,0,-p.r);
+        cx.fill();cx.restore();
+      }
+      requestAnimationFrame(loop);
+    })();
+  }
+  const pb=document.getElementById('petalBtn');
+  pb.addEventListener('click',()=>{on=!on;pb.setAttribute('aria-pressed',on)});
+})();
+</script>
+</body>
+</html>
